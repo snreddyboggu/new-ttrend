@@ -24,6 +24,7 @@ pipeline{
 
         }    
 
+            
              stage('SonarQube analysis') {
             environment {
             scannerHome = tool 'Satya-SonarScaner'
