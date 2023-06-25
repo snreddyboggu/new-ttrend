@@ -26,11 +26,11 @@ pipeline{
 
              stage('SonarQube analysis') {
             environment {
-            scannerHome = tool 'SonarScaner'
+            scannerHome = tool 'Satya-SonarScaner'
             }
         steps { 
             echo '------------------- Sonar Started -------------'
-        withSonarQubeEnv('Sonar-Server') { // If you have configured more than one global server connection, you can specify its name
+        withSonarQubeEnv('Satya-Sonar-Server') { // If you have configured more than one global server connection, you can specify its name
             sh "${scannerHome}/bin/sonar-scanner"
     }
     echo '------------------- Sonar Analysis Completed -------------'
