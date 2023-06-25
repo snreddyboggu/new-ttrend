@@ -31,7 +31,7 @@ pipeline{
         steps { 
             echo '------------------- Sonar Started -------------'
         withSonarQubeEnv('Sonar-Server') { // If you have configured more than one global server connection, you can specify its name
-            sh "${scannerHome}/bin/SonarScanner"
+            sh "${scannerHome}/bin/SonarScaner"
     }
     echo '------------------- Sonar Analysis Completed -------------'
   }
