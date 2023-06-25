@@ -80,7 +80,7 @@ pipeline{
     }
  
     
-    stage(" Docker Build ") {
+     stage(" Docker Build ") {
       steps {
         script {
            echo '<--------------- Docker Build Started --------------->'
@@ -89,8 +89,7 @@ pipeline{
         }
       }
     }
-
-            stage (" Docker Publish "){
+    stage (" Docker Publish "){
         steps {
             script {
                echo '<--------------- Docker Publish Started --------------->'  
@@ -100,7 +99,7 @@ pipeline{
                echo '<--------------- Docker Publish Ended --------------->'  
             }
         }
-    }
+    } 
         }   
     }
 
