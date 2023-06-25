@@ -79,7 +79,7 @@ pipeline{
     }
  
     def imageName = 'https://qtkaja.jfrog.io/satyadocker-docker-local/ttrend'
-    def version   = '2.1.2'
+    
     stage(" Docker Build ") {
       steps {
         script {
