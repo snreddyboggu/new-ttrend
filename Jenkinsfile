@@ -1,6 +1,6 @@
 def version   = '2.1.2'
 def registry = 'https://qtkaja.jfrog.io'
-def imageName = 'https://qtkaja.jfrog.io/satyadocker-docker-local/ttrend'
+def imageName = 'qtkaja.jfrog.io/satyadocker-docker-local/ttrend'
 
 pipeline{
     agent   { label 'mavenagent' }
